@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfAddition</title>
+    <style>
+        .main
+        {
+            background-color: black;
+            border-color: goldenrod;
+            margin-right: 10%;
+            margin-left: 10%;
+            border-style: ridge;
+            margin-top: 10%;
+        }
+h1
+{
+    padding: 0.1%;
+    color: white;
+    background-color: rgb(151, 28, 28);
+    text-align: center;
+}
+h2{
+    padding: 0.5%;
+    background-color: yellow;
+    text-align: center;
+}
+#inp
+{
+    font-size:95%;
+    background-color: rgb(114, 255, 255);
+    color: rgb(223, 44, 44);
+    font-stretch:expanded;
+    border-color: gold;
+    border-radius: 30px;
+    margin-top: 2%;
+    text-align: center;
+    width: 18%;
+    padding: 0.5%;
+    margin-left: 40.5%;
+}
+#ad
+{
+    border-color: rgb(255, 255, 255);
+    color: rgb(224, 231, 18);
+    background-color: rgb(87, 16, 134);
+    border-radius: 40%;
+    margin-top: .6%;
+    padding: 0.5%;
+    margin-left: 48%;
+}
+#op
+{
+    padding: 0.6%;
+    color: rgb(241, 15, 15);
+    background-color: rgb(0, 255, 255);
+    margin-top: 4%;
+    text-align: center;
+}
+body
+{
+    background-color: rgb(239, 239, 239);
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>*** ADDITION OF THE SELF ***</h1>
+    <h2>Accepted Maximum Three Digit Number</h2>
+
+<input type="number" id="inp" placeholder="Please Enter The Number"><br>
+
+<button onclick="add()" id="ad">Submit</button>
+
+<h3 id="op" >Your Addition is :
+<span id="rt"></span>
+</h3>                           
+</div>                          
+
+<script>
+
+    function add()
+    {
+        var a = document.getElementById("inp").value;
+
+        var b = a/101;
+        var c = a%100;
+        var d = c/11;
+        var e = a%10;
+
+        var add = Math.trunc(b + d + e);
+        document.getElementById("rt").innerHTML=add;
+    }
+
+    var g = document.getElementById("ad");
+    g.addEventListener()    
+
+</script>
+
+</body>
+</html>
